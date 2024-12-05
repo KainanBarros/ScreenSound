@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ScreenSound
+namespace ScreenSound.Modelos
 {
     class Musica
     {
@@ -8,7 +8,7 @@ namespace ScreenSound
         public Banda Artista { get; }
         public int Duracao { get; set; }
         public bool Disponivel { get; set; }
-        public string DescricaoResumida => $"A Música {this.Nome} pertence a banda {this.Artista}";
+        public string DescricaoResumida => $"A Música {Nome} pertence a banda {Artista}";
 
 
         public Musica(Banda artista, string nome)
