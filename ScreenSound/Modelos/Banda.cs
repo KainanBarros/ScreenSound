@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ScreenSound
+namespace ScreenSound.Modelos
 {
     class Banda
     {
         private List<Album> albuns = new List<Album>();
 
-        public string Nome { get;}
+        public string Nome { get; }
 
         public Banda(string nome)
         {
-            this.Nome = nome;
+            Nome = nome;
         }
 
         public void AdicionarAlbum(Album album)
@@ -21,7 +21,7 @@ namespace ScreenSound
 
         public void ExibirDiscografia()
         {
-            Console.WriteLine($"Discografia da banda {this.Nome}");
+            Console.WriteLine($"Discografia da banda {Nome}");
             foreach (Album album in albuns)
             {
                 Console.WriteLine($"Álbum: {album.Nome} ({album.DuracaoTotal})");

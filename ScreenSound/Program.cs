@@ -1,4 +1,6 @@
-﻿namespace ScreenSound
+﻿using ScreenSound.Modelos;
+
+namespace ScreenSound
 {
     class Program
     {
