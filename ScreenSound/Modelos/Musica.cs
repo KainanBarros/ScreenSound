@@ -20,7 +20,7 @@ namespace ScreenSound.Modelos
         public void ExibirFichaTecnica()
         {
             Console.WriteLine($"Nome: {this.Nome}");
-            Console.WriteLine($"Artista: {this.Artista.Nome}");
+            Console.WriteLine($"Artista: {this.Artista}");
             Console.WriteLine($"Duração: {this.Duracao}");
             if (this.Disponivel == true)
             {
